@@ -2,7 +2,7 @@
 
 ## 1. 概述
 
-如果一个 APP 在使用 Sensors Analytics 之前已经有很多用户，现在开始使用 Sensors Analytics 并嵌入了客户端 SDK 如 Android 和 iOS SDK，可能不能准确识别新安装，原因如下：
+如果一个 APP 在使用 Sensors Analytics 之前已经有很多用户，现在开始使用 Sensors Analytics 并嵌入了客户端 SDK 如 Android 和 iOS SDK，由于如下原因，可能会将老用户误识别为新用户，原因如下：
 
 嵌入 SDK 后 APP 启动时，发送 $AppStart 事件，其中一个属性 `$is_first_time` 用于标记是否第一次使用，这个值是根据 SDK 内的变量判断的，如果老用户的 APP 升级到嵌入 SDK 的版本，直接使用初始值会导致认为这个用户是新安装的用户。
 
