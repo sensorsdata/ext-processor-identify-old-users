@@ -1,12 +1,36 @@
-*.class
+.DS_Store
+git.properties
+*.userlibraries
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
-# Package Files #
-*.jar
-*.war
-*.ear
+*.iml
+*.eml 
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+## Directory-based project format:
+.idea/
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# java build files
+target
+
+*.swp
+.DS_Store
+
+# AppCode
+.idea
